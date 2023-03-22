@@ -1,0 +1,38 @@
+
+
+.card-img-top{
+    background-color: beige
+}
+
+.card-img-top span{
+   font-size: 100px;
+}
+  
+.card-img-top input[type ="file"]{
+    width: 85px;
+}
+
+.my_btn-submit{
+    align-self: center;
+    border: 1px solid #F5F5DC;
+    border-radius: 10px;
+    text-align: center;
+    transition: 200ms;
+    padding: .8rem .3rem;
+    cursor: pointer;
+}
+
+.my_btn-submit:hover{
+    background-color: gainsboro;
+    box-shadow: 0px 0px 10px 0px gainsboro;
+}
+
+.my_btn-submit:active{
+    background-color: #F5F5DC ;
+    transform: scale(.8);
+    transition: 100ms;
+}
+
+main{
+    background-color: gainsboro;
+}
