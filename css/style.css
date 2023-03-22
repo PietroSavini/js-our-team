@@ -1,4 +1,6 @@
+body{
 
+}
 
 .card-img-top{
     background-color: beige
@@ -14,7 +16,7 @@
 
 .my_btn-submit{
     align-self: center;
-    border: 1px solid #F5F5DC;
+    border: 1px solid grey;
     border-radius: 10px;
     text-align: center;
     transition: 200ms;
@@ -35,4 +37,47 @@
 
 main{
     background-color: gainsboro;
+    padding: 3rem 2rem;
 }
+
+/* sovrascrivo regole bootstrap  per offcanvas */
+.offcanvas.offcanvas-start {
+top: 50% !important;
+left: 50% !important;
+width: var(--bs-offcanvas-width);
+min-height: 70%;
+transform: translateX(-50%) translateY(-50%) !important;
+border-radius: 15px;
+}
+
+section{
+    text-align: center;
+}
+
+.ms_container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*  output cards */
+
+.row-container .card{
+    box-shadow: 5px 5px 10px gray;
+}
+
+.row-container .card-img-top{
+    background-color: #fff;
+}
+
+.row-container .card-img-top img{
+    width: 100%;
+}
+
+.row-container .card-body{
+    text-align: center;
+}
+
+.row-container .card-body span{
+    font-size: 25px;
+}
+

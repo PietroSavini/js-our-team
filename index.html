@@ -1,44 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>.
+    <title>Our Team</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- bootstrap cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- fontawesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <main class="container-fluid mb-3">
-        <div class="row d-flex flex-wrap justify-content-center">
-            <div class="col-5">
-                <div class="card example-card">
-                    <div class="card-img-top d-flex align-items-center justify-content-center flex-column py-2">
-                        <h5>Aggiungi membro al team:</h5>
-                        <span><i class="fa-solid fa-user" style="color: #ffffff;"></i></span>
-                        <label for="profile-img">carica una foto profilo</label>
-                        <input type="file" id="profile-img">
-                    </div>
-                    <div class="card-body d-flex flex-column">
-                       <div class="d-flex mb-3 flex-column">
-                        <label for="user-name">Nome:</label>
-                        <input type="text" name="user-name" id="new-member-name">
-                        <label for="user-surname">Cognome:</label>
-                        <input type="text" name="user-surname" id="new-member-surname">
-                       </div>    
-                    <label for="user-description">Description / role:</label>   
-                    <textarea name="user-description" id="new-member-description" cols="30" rows="4"></textarea>
-                      <div class="my_btn-submit mt-2">Crea nuovo Membro</div>
+    <main>
+        <!-- section grid with generated cards -->
+        <section class="container-fluid">
+            
+            <div class="ms_container mb-5">
+                <h1 class="mb-1">Our Team</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, odit et. Dolor, dolore. Et quas harum possimus? Numquam, fuga ea.</p>
+            </div>
+            
+            <div class="row row-container g-3">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-img-top d-flex align-items-center justify-content-center flex-column">
+                            <img src="img/angela-caroll-chief-editor.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <span class="me-2 ">nome</span><span>cognome</span>
+                            <p>descrizione</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="card-grid container-fluid"></div>
+        <!-- new member section -->
+        <div class="container-fluid new-member d-flex justify-content-center mt-5">
+            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample">
+                Aggiungi Nuovo Membro +
+            </a>
+            <!-- offcanvas start -->
+            <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Crea Nuovo Membro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <div class="row d-flex flex-wrap justify-content-center">
+                            <div class="col-11">
+                                <div class="card example-card">
+                                    <div
+                                        class="card-img-top d-flex align-items-center justify-content-center flex-column py-2">
+                                        <span><i class="fa-solid fa-user" style="color: #ffffff;"></i></span>
+                                        <label for="profile-img">carica una foto profilo</label>
+                                        <input type="file" id="profile-img">
+                                    </div>
+                                    <div class="card-body d-flex flex-column">
+                                        <div class="d-flex mb-3 flex-column">
+                                            <label for="user-name">Nome:</label>
+                                            <input type="text" name="user-name" id="new-member-name">
+                                            <label for="user-surname">Cognome:</label>
+                                            <input type="text" name="user-surname" id="new-member-surname">
+                                        </div>
+                                        <label for="user-description">Description / role:</label>
+                                        <textarea name="user-description" id="new-member-description" cols="30"
+                                            rows="4"></textarea>
+                                        <div class="my_btn-submit mt-2">Crea nuovo Membro</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /offcanvas -->
+        </div>
+        <!-- new member section -->
     </main>
+
+
+    <!-- my js -->
     <script src="js/script.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
